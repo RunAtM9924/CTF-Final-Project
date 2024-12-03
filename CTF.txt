@@ -1,0 +1,16 @@
+Here's a mysterious hexadecimal string:
+466c61677b4865785f69735f46756e7d
+
+Can you decode it to find the flag?
+# Verification Script
+FLAG = "Flag{BoogaBooga}"
+
+def verify_submission(submission):
+    if submission == FLAG:
+        return "Correct! You've solved the challenge."
+    else:
+        return "Incorrect. Try again!"
+
+# Test the function
+user_input = input("Enter the flag: ").strip()
+print(verify_submission(user_input))
